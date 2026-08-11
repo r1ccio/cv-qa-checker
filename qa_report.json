@@ -1,0 +1,81 @@
+{
+    "status": "FAILED",
+    "summary": {
+        "total_gt_objects": 8,
+        "total_ann_objects": 8,
+        "matched_objects": 4
+    },
+    "global_errors": [
+        "Global attribute mismatch for 'weather': expected 'clear', got 'fog'"
+    ],
+    "false_negatives_missed": [
+        {
+            "gt_id": "0.4",
+            "expected_type": "car",
+            "max_iou_found": 0.0,
+            "reason": "Not annotated at all (IoU is 0.0)"
+        },
+        {
+            "gt_id": "0.5",
+            "expected_type": "road sign",
+            "max_iou_found": 0.3993,
+            "reason": "Annotated badly, IoU too low (0.3993 < 0.5)"
+        },
+        {
+            "gt_id": "0.7",
+            "expected_type": "road_barrier",
+            "max_iou_found": 0.4842,
+            "reason": "Annotated badly, IoU too low (0.4842 < 0.5)"
+        },
+        {
+            "gt_id": "0.8",
+            "expected_type": "road_barrier",
+            "max_iou_found": 0.4082,
+            "reason": "Annotated badly, IoU too low (0.4082 < 0.5)"
+        }
+    ],
+    "false_positives_extra": [
+        {
+            "ann_id": "0.1",
+            "drawn_type": "road_barrier",
+            "max_iou_found": 0.4082,
+            "reason": "Poor localization (IoU 0.4082 < 0.5)"
+        },
+        {
+            "ann_id": "0.5",
+            "drawn_type": "road sign",
+            "max_iou_found": 0.0,
+            "reason": "Hallucinated object (Drawn on empty space, IoU is 0.0)"
+        },
+        {
+            "ann_id": "0.7",
+            "drawn_type": "road sign",
+            "max_iou_found": 0.3993,
+            "reason": "Poor localization (IoU 0.3993 < 0.5)"
+        },
+        {
+            "ann_id": "0.8",
+            "drawn_type": "road_barrier",
+            "max_iou_found": 0.4842,
+            "reason": "Poor localization (IoU 0.4842 < 0.5)"
+        }
+    ],
+    "matching_errors": [
+        {
+            "gt_id": "0.1",
+            "ann_id": "0.3",
+            "iou": 0.8504,
+            "errors": [
+                "Attributes mismatch: expected {'oncoming': False}, got {'oncoming': None}"
+            ]
+        },
+        {
+            "gt_id": "0.3",
+            "ann_id": "0.2",
+            "iou": 0.6811,
+            "errors": [
+                "Attributes mismatch: expected {'oncoming': False}, got {'oncoming': True}"
+            ]
+        }
+    ]
+}
