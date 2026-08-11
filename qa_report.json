@@ -3,10 +3,67 @@
     "summary": {
         "total_gt_objects": 8,
         "total_ann_objects": 8,
-        "matched_objects": 4
+        "matched_objects": 4,
+        "overall_file_score_percent": 47.23
     },
     "global_errors": [
         "Global attribute mismatch for 'weather': expected 'clear', got 'fog'"
+    ],
+    "object_scores": [
+        {
+            "gt_id": "0.1",
+            "ann_id": "0.3",
+            "type": "car",
+            "score_percent": 85.04
+        },
+        {
+            "gt_id": "0.2",
+            "ann_id": "0.9",
+            "type": "car",
+            "score_percent": 76.08
+        },
+        {
+            "gt_id": "0.3",
+            "ann_id": "0.2",
+            "type": "car",
+            "score_percent": 68.11
+        },
+        {
+            "gt_id": "0.4",
+            "ann_id": null,
+            "type": "car",
+            "score_percent": 0.0
+        },
+        {
+            "gt_id": "0.5",
+            "ann_id": "0.7",
+            "type": "road sign",
+            "score_percent": 39.93
+        },
+        {
+            "gt_id": "0.6",
+            "ann_id": "0.6",
+            "type": "road sign",
+            "score_percent": 66.67
+        },
+        {
+            "gt_id": "0.7",
+            "ann_id": "0.8",
+            "type": "road_barrier",
+            "score_percent": 48.42
+        },
+        {
+            "gt_id": "0.8",
+            "ann_id": "0.1",
+            "type": "road_barrier",
+            "score_percent": 40.82
+        },
+        {
+            "gt_id": null,
+            "ann_id": "0.5",
+            "type": "road sign",
+            "score_percent": 0.0
+        }
     ],
     "false_negatives_missed": [
         {
