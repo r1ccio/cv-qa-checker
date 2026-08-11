@@ -56,8 +56,8 @@ The script features **automatic extraction**. You do not need to unzip the files
          cv-qa-checker/
         ├──  annotated/           # Folder containing road.jpg.zip
         ├──  groubd_truth/        # Folder containing road.jpg.zip
-        ├──  main.py              # Main analysis script
-        └──  README.md
+        └──  main.py              # Main analysis script
+      
 
 **Run the analysis:**
 
